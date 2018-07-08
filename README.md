@@ -11,8 +11,7 @@ LoginScreen, SignUpScreen, WelcomeScreen,AppTabNavigatorScreen
 
 
 # App.js
-'
-
+```
 import React, { Component } from 'react';
 import {
  
@@ -45,10 +44,10 @@ const AppStackNavigator = new createStackNavigator({
 });
 
 
-'
+```
 
 #AppTabNavigator.js
-'
+```
 import {createBottomTabNavigator } from 'react-navigation';
 import Home from './tabs/Home';
 import Profile from './tabs/Profile';
@@ -75,12 +74,15 @@ export default class AppTabNavigator extends Component {
   }
 }
 
-'
+```
 
-#Another important Topic is to transfer navigation from child route to parent route
+##Another important Topic is to transfer navigation from child route to parent route
 
-We pass the screen Props when rendering the TabNavigator like
-'export default class AppTabNavigator extends Component {
+###We pass the screen Props when rendering the TabNavigator like
+```
+.
+.
+export default class AppTabNavigator extends Component {
 
     static navigationOptions={
         header:null
@@ -91,12 +93,16 @@ We pass the screen Props when rendering the TabNavigator like
       <TabNavigator screenProps={{navigation:this.props.navigation}}/> //here we passed it
     );
   }
-}'
+}
+```
 
-and catch inside screen to call those route as
+###and catch inside screen to call those route as
 
-#inside profile.js for logout button
-'export default class Profile extends Component {
+##inside profile.js for logout button
+```
+.
+.
+export default class Profile extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -106,6 +112,9 @@ and catch inside screen to call those route as
       </View>
     );
   }
-}'
+}
+.
+.
+```
 
 
