@@ -8,7 +8,9 @@ In this Project We have
 
 
 # App.js
-'import React, { Component } from 'react';
+'
+
+import React, { Component } from 'react';
 import {
  
   StyleSheet,
@@ -37,7 +39,8 @@ const AppStackNavigator = new createStackNavigator({
   AppTabNavigator:{screen:AppTabNavigator},
   
 
-});'
+});
+'
 
 #AppTabNavigator.js
 '
@@ -65,7 +68,9 @@ export default class AppTabNavigator extends Component {
       <TabNavigator screenProps={{navigation:this.props.navigation}}/>
     );
   }
-}'
+}
+
+'
 
 #Another important Topic is to transfer navigation from child route to parent route
 
