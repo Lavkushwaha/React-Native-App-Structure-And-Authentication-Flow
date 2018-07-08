@@ -5,9 +5,7 @@ React TabNavigation and StackNavigation of react-navigation is used here to make
 In this Project We have
 
 4 screens:- 
-```
-LoginScreen, SignUpScreen, WelcomeScreen,AppTabNavigatorScreen
-```
+> LoginScreen, SignUpScreen, WelcomeScreen,AppTabNavigatorScreen
 
 
 # App.js
