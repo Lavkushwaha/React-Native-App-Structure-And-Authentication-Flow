@@ -40,6 +40,8 @@ const AppStackNavigator = new createStackNavigator({
   
 
 });
+
+
 '
 
 #AppTabNavigator.js
