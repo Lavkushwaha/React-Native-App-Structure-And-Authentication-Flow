@@ -1,4 +1,4 @@
-# React Native App Structure And Authentication FLow 
+# React Native App Structure And Authentication FLow :+1:
 
 React TabNavigation and StackNavigation of react-navigation is used here to make a solid Basic App Structure
 
@@ -46,7 +46,7 @@ const AppStackNavigator = new createStackNavigator({
 
 ```
 
-#AppTabNavigator.js
+# AppTabNavigator.js
 ```
 import {createBottomTabNavigator } from 'react-navigation';
 import Home from './tabs/Home';
@@ -76,9 +76,9 @@ export default class AppTabNavigator extends Component {
 
 ```
 
-##Another important Topic is to transfer navigation from child route to parent route
+## Another important Topic is to transfer navigation from child route to parent route
 
-###We pass the screen Props when rendering the TabNavigator like
+### We pass the screen Props when rendering the TabNavigator like
 ```
 .
 .
@@ -96,9 +96,9 @@ export default class AppTabNavigator extends Component {
 }
 ```
 
-###and catch inside screen to call those route as
+### and catch inside screen to call those route as
 
-##inside profile.js for logout button
+## inside profile.js for logout button
 ```
 .
 .
