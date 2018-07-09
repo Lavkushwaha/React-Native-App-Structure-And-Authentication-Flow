@@ -5,7 +5,8 @@ import {
   StyleSheet,
   Text,
   View,
-  Button
+  Button,
+  AsyncStorage
 } from 'react-native';
 
 
@@ -15,7 +16,11 @@ export default class Profile extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Button style={{marginBottom:20}} rounded title="Logout" onPress={() => this.props.screenProps.navigation.navigate('WelcomeScreen')}/>
+        <Button style={{marginBottom:20}} rounded title="Logout" onPress={() =>
+          {
+            AsyncStorage.removeItem('user').then(this.props.screenProps.navigation.navigate('WelcomeScreen')).then(this.setState({isLoggedIn:0}))
+          }
+          }/>
        
         
       </View>

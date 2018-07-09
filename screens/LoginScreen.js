@@ -5,7 +5,8 @@ import {
   StyleSheet,
   Text,
   View,
-  Button
+  Button,
+  AsyncStorage
 } from 'react-native';
 
 
@@ -15,7 +16,12 @@ export default class LoginScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Button style={{marginBottom:20}} rounded title="To Dashboard" onPress={() => this.props.navigation.navigate('AppTabNavigator')}/>
+        <Button style={{marginBottom:20}} rounded title="To Dashboard" onPress={() =>
+           {
+            AsyncStorage.setItem('user', 'userid').then(this.props.navigation.navigate('AppTabNavigator'))
+           }
+           
+           }/>
        
         
       </View>
